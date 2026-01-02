@@ -1,0 +1,7 @@
+raw_data:
+  directory: data/raw
+  filename: manufacturing_data.csv
+
+target:
+  name: yield
+  type: binary
