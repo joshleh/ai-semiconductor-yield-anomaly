@@ -53,3 +53,11 @@ Run the interactive dashboard:
 ```bash
 streamlit run dashboards/app.py
 ```
+
+## API (FastAPI)
+
+Run the inference API:
+
+```bash
+uvicorn api.main:app --reload
+```
