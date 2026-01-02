@@ -28,3 +28,13 @@ Place your dataset CSV in `data/raw/manufacturing_data.csv` with a target column
 
 ```bash
 python -m src.models.train_baseline
+```
+
+## Run Anomaly Detection
+
+Train an unsupervised Isolation Forest model to detect abnormal
+manufacturing process behavior:
+
+```bash
+python -m src.models.train_anomaly_iforest
+```
