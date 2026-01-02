@@ -38,3 +38,10 @@ manufacturing process behavior:
 ```bash
 python -m src.models.train_anomaly_iforest
 ```
+
+## Explainability / Root Cause Signals
+
+Global yield drivers (permutation importance):
+```bash
+python -m src.models.explain_yield
+```
