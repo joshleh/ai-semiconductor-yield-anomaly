@@ -45,3 +45,11 @@ Global yield drivers (permutation importance):
 ```bash
 python -m src.models.explain_yield
 ```
+
+## Dashboard (Streamlit)
+
+Run the interactive dashboard:
+
+```bash
+streamlit run dashboards/app.py
+```
