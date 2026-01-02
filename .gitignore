@@ -214,9 +214,9 @@ data/processed/
 *.parquet
 
 # Models & ML artifacts
-models/
-mlruns/
-artifacts/
+/models/
+/mlruns/
+/artifacts/
 
 # Virtual environments
 .env

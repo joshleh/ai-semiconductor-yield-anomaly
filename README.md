@@ -21,3 +21,10 @@ Python, pandas, scikit-learn, FastAPI, Streamlit
 
 ## Status
 Scaffolded — implementation in progress.
+
+## Run Baseline Yield Model
+
+Place your dataset CSV in `data/raw/manufacturing_data.csv` with a target column named `yield`, then run:
+
+```bash
+python -m src.models.train_baseline
