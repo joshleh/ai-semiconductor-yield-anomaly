@@ -1,2 +1,23 @@
-# ai-semiconductor-yield-anomaly
-End-to-end AI/ML system for semiconductor manufacturing that predicts test yield, detects process anomalies, and surfaces root-cause signals from high-dimensional sensor data. Built with reproducible pipelines, explainable models, and production-style APIs.
+# AI-Driven Semiconductor Yield & Anomaly Detection
+
+End-to-end machine learning system for predicting semiconductor manufacturing yield and detecting process anomalies using high-dimensional sensor data.
+
+## Project Overview
+This project builds a production-style ML pipeline to:
+- Predict manufacturing yield
+- Detect anomalous process behavior
+- Surface root-cause signals from sensor data
+
+## Planned Components
+- Data ingestion & validation
+- Feature engineering for manufacturing data
+- Yield prediction models
+- Unsupervised anomaly detection
+- Model explainability
+- API and dashboard for inference
+
+## Tech Stack
+Python, pandas, scikit-learn, FastAPI, Streamlit
+
+## Status
+Scaffolded — implementation in progress.
