@@ -1,0 +1,23 @@
+services:
+  api:
+    build: .
+    container_name: semiyield_api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount models and data from your local machine into the container
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+
+  dashboard:
+    build: .
+    container_name: semiyield_dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+    command: streamlit run dashboards/app.py --server.port 8501 --server.address 0.0.0.0

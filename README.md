@@ -61,3 +61,11 @@ Run the inference API:
 ```bash
 uvicorn api.main:app --reload
 ```
+
+## Run with Docker (API + Dashboard)
+
+Build and start both services:
+
+```bash
+docker compose up --build
+```

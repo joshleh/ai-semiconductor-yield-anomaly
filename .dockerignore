@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+
+# Git
+.git/
+.gitignore
+
+# Local data / artifacts / models (mounted at runtime)
+data/raw/
+models/
+artifacts/
+mlruns/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
