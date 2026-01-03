@@ -14,6 +14,9 @@ import joblib
 
 from src.features.preprocess import PreprocessConfig, split_X_y
 from src.models.explain import top_abs_contributors
+from src.ops.bootstrap import ensure_models_exist
+ensure_models_exist()
+
 
 DATA_DEFAULT = Path("data/raw/uci-secom.csv")
 MODELS_DIR = Path("models")

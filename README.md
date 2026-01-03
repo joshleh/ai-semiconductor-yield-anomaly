@@ -69,3 +69,11 @@ Build and start both services:
 ```bash
 docker compose up --build
 ```
+
+## Deploy (Render)
+
+This repo includes `render.yaml` for one-click deploy of:
+- FastAPI service
+- Streamlit dashboard
+
+On Render: New > Blueprint > select repo.

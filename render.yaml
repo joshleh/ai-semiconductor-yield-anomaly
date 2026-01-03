@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: semiyield-api
+    env: docker
+    plan: free
+    healthCheckPath: /health
+    dockerfilePath: ./Dockerfile
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    autoDeploy: true
+
+  - type: web
+    name: semiyield-dashboard
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    startCommand: streamlit run dashboards/app.py --server.address 0.0.0.0 --server.port $PORT
+    autoDeploy: true

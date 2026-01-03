@@ -17,6 +17,9 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from src.features.preprocess import PreprocessConfig, split_X_y
 from src.models.explain import top_abs_contributors
+from src.ops.bootstrap import ensure_models_exist
+ensure_models_exist()
+
 
 MODELS_DIR = Path("models")
 
